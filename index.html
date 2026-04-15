@@ -17,6 +17,22 @@
         </nav>
     </header>
 
+    <form name = "Ajouter" method = "post">
+        Titre: <input type = "text" name = "titre" placeholder = "Ex: Legally Blonde" required>
+        Genre : <select size = "4" name = "genre" required>
+                    <option value = "action"> Action </option>
+                    <option value = "fantasy"> Fantastique </option>
+                    <option value = "romance"> Romance </option>
+                    <option value = "scifi"> Science-fiction </option>
+                </select>
+        Statut: <select size = "3" name = "statut" required>
+                    <option value = "à voir"> À voir </option>
+                    <option value = "en cours"> En cours </option>
+                    <option value = "vu"> Vu </option>
+                </select>
+        Ajouter <input type = "submit" name = "ajouter" >
+    </form>
+
     <footer>
         &copy IFT1005
         <a href = "https://en.wikipedia.org/wiki/Privacy" > Privacy </a>
