@@ -26,6 +26,9 @@ header {
   gap: 20px;
 }
 
+main { margin: 15px;
+}
+
 #entêtes {background-color: #E0E0E0;}
 
 table {border-collapse: collapse;
