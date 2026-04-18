@@ -6,25 +6,34 @@
     <link rel="stylesheet" href="style.css">
     <title> Cinémathèque </title>
 </head>
+
 <body>
     <header> 
-        Cinémathèque
-        <img src="assets/assets/nav.png">
-        <nav> 
+        <div class="header-container">
+            
+        <div class="left">
+            <img src="assets/assets/nav.png" class="logo"> 
+            <h1>Cinémathèque</h1>
+        </div>
+
+        <nav class="right"> 
             <a> Ajouter </a>
             <a> Sélection </a>
             <a> Liste </a>
             <a> Statistiques </a>
         </nav>
+
+        </div>
     </header>
 
-    <form name = "Ajouter" method = "post">
-        <fieldset><legend>Ajouter un film ou une série</legend>
-        Titre: <input type = "text" name = "titre" placeholder = "Ex: Legally Blonde" required>
+    <main>
+        <form name = "Ajouter" method = "post">
+            <fieldset><legend>Ajouter un film ou une série</legend>
+            Titre: <input type = "text" name = "titre" placeholder = "Ex: Legally Blonde" required>
 
-        Genre : 
+            Genre : 
             <select size="4" name="genre" id="genre" list="genres" placeholder="Choisir un genre" required>
-        <input type = "text" name = "genre" id = "genre" list = "genres" placeholder="Choisir un genre" required>
+            <input type = "text" name = "genre" id = "genre" list = "genres" placeholder="Choisir un genre" required>
             <datalist id="genres">
                     <option value = "action" label= "Action">  </option>
                     <option value = "fantasy" label= "Fantaisie"> </option>
@@ -37,17 +46,18 @@
                     <option value = "series" label= "Série"> </option>
             </datalist>
             </select>
-        Statut: <input type = "text" name = "statut" id="statut" list="statuts" placeholder="Choisir un statut" required>
+            Statut: <input type = "text" name = "statut" id="statut" list="statuts" placeholder="Choisir un statut" required>
             <datalist id="statuts">
                     <option value = "à voir" label="À voir"> </option>
                     <option value = "en cours" label="En cours"> </option>
                     <option value = "vu" label="Vu"> </option>
             </datalist>
             <br>
-        Ajouter: <button type = "submit" name = "ajouter" id="submit" value="Ajouter">
-        <label for="submit">+ Ajouter</label>
-        </fieldset>
-    </form>
+            Ajouter: <button type = "submit" name = "ajouter" id="submit" value="Ajouter">
+            <label for="submit">+ Ajouter</label>
+            </fieldset>
+        </form>
+    </main>
 
 sélection cinéma et statistiques 
 <h2>Mes Films et Séries</h2>
