@@ -1,106 +1,122 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <title> Cinémathèque </title>
-</head>
 
-<body>
-    <header> 
-        <div class="header-container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title> Cinémathèque </title>
+    </head>
 
-        <div class="left">
-            <img src="assets/assets/nav.png" class="logo"> 
-            <h1>Cinémathèque</h1>
-        </div>
+    <body>
 
-        <nav class="right"> 
-            <a> Ajouter </a>
-            <a> Sélection </a>
-            <a> Liste </a>
-            <a> Statistiques </a>
-        </nav>
+        <header> 
+            <div class="header-container">
+                <div class="left">
+                    <img src="assets/assets/nav.png" class="logo"> 
+                    <h1>Cinémathèque</h1>
+                </div>
 
-        </div>
-    </header>
+            <nav class="right"> 
+                <a> Ajouter </a>
+                <a> Sélection </a>
+                <a> Liste </a>
+                <a> Statistiques </a>
+            </nav>
 
-    <main>
-        <form name = "Ajouter" method = "post">
-            <fieldset><legend>Ajouter un film ou une série</legend>
-            Titre: <input type = "text" name = "titre" placeholder = "Ex: Legally Blonde" required>
+            </div>
+        </header>
 
-            Genre : 
-            <select size="4" name="genre" id="genre" list="genres" placeholder="Choisir un genre" required>
-            <input type = "text" name = "genre" id = "genre" list = "genres" placeholder="Choisir un genre" required>
-            <datalist id="genres">
-                    <option value = "action" label= "Action">  </option>
-                    <option value = "fantasy" label= "Fantaisie"> </option>
-                    <option value = "romance" label= "Romance"> </option>
-                    <option value = "scifi" label= "Science-fiction"> </option>
-                    <option value = "comedy" label="Comédie"> </option>
-                    <option value = "drama" label="Drame"> </option>
-                    <option value = "animation" label="Animation"> </option>
-                    <option value = "documentary" label="Documentaire"> </option>
-                    <option value = "series" label= "Série"> </option>
-            </datalist>
-            </select>
-            Statut: <input type = "text" name = "statut" id="statut" list="statuts" placeholder="Choisir un statut" required>
-            <datalist id="statuts">
-                    <option value = "à voir" label="À voir"> </option>
-                    <option value = "en cours" label="En cours"> </option>
-                    <option value = "vu" label="Vu"> </option>
-            </datalist>
-            <br>
-            Ajouter: <button type = "submit" name = "ajouter" id="submit" value="Ajouter">
-            <label for="submit">+ Ajouter</label>
-            </fieldset>
-        </form>
+        <main>
+            <section>
+                <form name = "Ajouter" method = "post"></form>
+
+                    <fieldset>
+                        <h2>Ajouter un film ou une série</h2>
+                
+                        Titre: 
+                        <input type = "text" name = "titre" placeholder = "Ex: Legally Blonde" required>
+
+                        Genre : 
+                        <input type="text" name="genre" list = "genres" placeholder="Choisir un genre" required>
+
+                        <datalist id="genres">
+                            <option value = "action" label= "Action">  </option>
+                            <option value = "fantasy" label= "Fantaisie"> </option>
+                            <option value = "romance" label= "Romance"> </option>
+                            <option value = "scifi" label= "Science-fiction"> </option>
+                            <option value = "comedy" label="Comédie"> </option>
+                            <option value = "drama" label="Drame"> </option>
+                            <option value = "animation" label="Animation"> </option>
+                            <option value = "documentary" label="Documentaire"> </option>
+                            <option value = "series" label= "Série"> </option>
+                        </datalist>
+            
+                        Statut: 
+                        <input type = "text" name = "statut" id="statut" list="statuts" placeholder="Choisir un statut" required>
+
+                        <datalist id="statuts">
+                            <option value = "à voir" label="À voir"> </option>
+                            <option value = "en cours" label="En cours"> </option>
+                            <option value = "vu" label="Vu"> </option>
+                        </datalist>
+
+                        <br>
+
+                        <button type="submit">+ Ajouter</button>
+
+                    </fieldset>
+
+                </form>
+            </section>
+
+            <section>
+                sélection cinéma et statistiques 
+            </section>
     
+            <section>
+                <h2>Mes Films et Séries</h2>
+                <table>
+                    <tr id="entêtes">
+                        <th> Titre </th>
+                        <th> Genre </th>
+                        <th> Statut </th>
+                        <th> Action </th>
+                    </tr>
+                    <tr>
+                        <td> Inception </td>
+                        <td> Science-fiction </td>
+                        <td> Vu </td>
+                        <td> Supprimer </td>
+                    </tr>
+                    <tr>
+                        <td> Stranger Things </td>
+                        <td> Série </td>
+                        <td> En cours </td>
+                        <td> Supprimer </td>
+                    </tr>
+                    <tr>
+                        <td> Toy Story </td>
+                        <td> Animation </td>
+                        <td> À voir </td>
+                        <td> Supprimer </td>
+                    </tr>
+                </table>
+            </section>
+        </main>
 
-sélection cinéma et statistiques 
-<h2>Mes Films et Séries</h2>
-    <table>
-        <tr id="entêtes">
-            <td><b> Titre </b></td>
-            <td><b> Genre </b></td>
-            <td><b> Statut </b></td>
-            <td><b> Action </b></td>
-        </tr>
-        <tr>
-            <td> Inception </td>
-            <td> Science-fiction </td>
-            <td> Vu </td>
-            <td> Supprimer </td>
-        </tr>
-        <tr>
-            <td> Stranger Things </td>
-            <td> Série </td>
-            <td> En cours </td>
-            <td> Supprimer </td>
-        </tr>
-        <tr>
-            <td> Toy Story </td>
-            <td> Animation </td>
-            <td> À voir </td>
-            <td> Supprimer </td>
-        </tr>
-    </table>
-    </main>
-
-    <footer>
-        <div class="container">
-       
-        <span> &copy 2026 IFT1005</span>
-        <span>
-            <a href = "https://en.wikipedia.org/wiki/Contact_lens"> Contact </a>
-            <a href = "https://en.wikipedia.org/wiki/Privacy" > Privacy </a>
-        </span>
+        <footer>
+            <div class="container">
+                <span> &copy 2026 IFT1005</span>
+                <span>
+                    <a href = "https://en.wikipedia.org/wiki/Contact_lens"> Contact </a>
+                    <a href = "https://en.wikipedia.org/wiki/Privacy" > Privacy </a>
+                </span>
      
-        </div>
-    </footer>
+            </div>
+        </footer>
     
-</body>
+    </body>
+
 </html>

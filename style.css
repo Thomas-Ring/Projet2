@@ -36,7 +36,11 @@ table {border-collapse: collapse;
 
 }
 
-td {border-bottom: 1px solid #D3D3D3;
+th {text-align: left;
+    font-weight: bold;
+}
+
+td, th {border-bottom: 1px solid #D3D3D3;
     padding: 20px;
     
 }
