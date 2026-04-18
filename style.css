@@ -29,8 +29,6 @@ header {
 main { margin: 15px;
 }
 
-#entêtes {background-color: #E0E0E0;}
-
 table {border-collapse: collapse;
     width: 100%;
 
@@ -38,6 +36,7 @@ table {border-collapse: collapse;
 
 th {text-align: left;
     font-weight: bold;
+    background-color: #E0E0E0;
 }
 
 td, th {border-bottom: 1px solid #D3D3D3;
@@ -49,7 +48,7 @@ body{margin: 0;
     font-family: 'Inter',sans-serif;}
 
 .container {
-    
+
     display: flex;
     justify-content: space-between;
 }
