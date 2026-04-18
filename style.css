@@ -11,3 +11,27 @@ td {border-bottom: 1px solid #D3D3D3;
     padding: 20px;
     
 }
+
+body{margin: 0;}
+
+.container {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    color: white;
+    background-color: #000080;
+    padding: 20px 15px;
+    }
+
+footer a {
+    color: white;
+    text-decoration: none;
+   
+    }
+
+.container a:first-child {
+   margin-right: 15px;
+    }
