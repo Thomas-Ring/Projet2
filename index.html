@@ -22,7 +22,8 @@
         Titre: <input type = "text" name = "titre" placeholder = "Ex: Legally Blonde" required>
 
         Genre : 
-            <input type = "text" name = "genre" id = "genre" list = "genres" placeholder="Choisir un genre" required>
+            <select size="4" name="genre" id="genre" list="genres" placeholder="Choisir un genre" required>
+        <input type = "text" name = "genre" id = "genre" list = "genres" placeholder="Choisir un genre" required>
             <datalist id="genres">
                     <option value = "action" label= "Action">  </option>
                     <option value = "fantasy" label= "Fantaisie"> </option>
@@ -34,14 +35,15 @@
                     <option value = "documentary" label="Documentaire"> </option>
                     <option value = "series" label= "Série"> </option>
             </datalist>
-    
+            </select>
         Statut: <input type = "text" name = "statut" id="statut" list="statuts" placeholder="Choisir un statut" required>
             <datalist id="statuts">
                     <option value = "à voir" label="À voir"> </option>
                     <option value = "en cours" label="En cours"> </option>
                     <option value = "vu" label="Vu"> </option>
             </datalist>
-        Ajouter: <button type = "submit" name = "ajouter">
+            <br>
+        Ajouter: <button type = "submit" name = "ajouter" id="submit" value="Ajouter">
         <label for="submit">+ Ajouter</label>
         </fieldset>
     </form>
