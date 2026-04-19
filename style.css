@@ -125,26 +125,38 @@ footer a {
 #sectionForm{
     background-color: #F0F8FF;
     margin-top: 0;
+    padding-top:20px;
+    padding-bottom: 20px;
 }
 
 #sectionSelectionCinema{
     background-color: #F0FFFF;
     margin: 0;
+    padding-top:20px;
+    padding-bottom: 20px;
 }
 
 #sectionStats{
     background-color: #F0F8FF;
     margin: 0;
+    padding-top:20px;
+    padding-bottom: 20px;
 }
 
 #sectionMesFilmsSeries{
     background-color: #F0FFFF;
     margin: 0;
+    padding-top:20px;
+    padding-bottom: 20px;
 }
 
 #sectionBandeAnnonce{
     background-color: #F0F8FF;
-
+    margin:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .centrer {
