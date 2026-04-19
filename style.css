@@ -40,7 +40,14 @@ th {text-align: left;
 
 td, th {border-bottom: 1px solid #D3D3D3;
     padding: 20px;
-    
+}
+
+.delete {background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
 body {margin: 0;
