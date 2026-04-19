@@ -124,7 +124,7 @@ footer a {
 
 #sectionForm{
     background-color: #F0F8FF;
-    margin: 0;
+    margin-top: 0;
 }
 
 #sectionSelectionCinema{
@@ -144,11 +144,16 @@ footer a {
 
 #sectionBandeAnnonce{
     background-color: #F0F8FF;
-    margin: 0;
+
 }
 
 .centrer {
     margin-right: auto;
     margin-left: auto;
     width:90%;
+}
+
+h1, h2, p {
+    margin-top:0;
+    margin-bottom: 0;
 }
