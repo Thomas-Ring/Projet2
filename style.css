@@ -97,3 +97,13 @@ footer a {
 #selectionCinema p {
     margin:2%;
 }
+
+#stats {
+    display:flex;
+}
+
+#stats div {
+    width:20%;
+    background-color: #CCFFFF;
+    margin: 1%
+}
