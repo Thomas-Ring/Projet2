@@ -30,16 +30,16 @@
 
         <main>
             <section>
-                <form name = "Ajouter" method = "post">
+                <form name = "Ajouter">
 
                     <fieldset>
                         <h2>Ajouter un film ou une série</h2>
                 
                         Titre: 
-                        <input type = "text" name = "titre" placeholder = "Ex: Legally Blonde" required>
+                        <input type = "text" name = "titre" id = "titre" placeholder = "Ex: Legally Blonde" required>
 
                         Genre : 
-                        <input type="text" name="genre" list = "genres" placeholder="Choisir un genre" required>
+                        <input type="text" name="genre" id="genre" list = "genres" placeholder="Choisir un genre" required>
 
                         <datalist id="genres">
                             <option value = "Action">  </option>
@@ -64,7 +64,7 @@
 
                         <br>
 
-                        <button id="boutonSoumettre" type="submit">+ Ajouter</button>
+                        <button type="button" id="boutonSoumettre">+ Ajouter</button>
 
                     </fieldset>
 
@@ -110,7 +110,7 @@
     
             <section>
                 <h2>Mes Films et Séries</h2>
-                <table>
+                <table id="mesFilmsSeries">
                     <tr>
                         <th> Titre </th>
                         <th> Genre </th>
