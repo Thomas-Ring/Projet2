@@ -29,8 +29,8 @@
         </header>
 
         <main>
-            <section>
-                <form id="ajouter" name = "ajouter">
+            <section id="sectionForm">
+                <form id="ajouter" name = "ajouter" class="centrer">
 
                     <fieldset>
                         <h2>Ajouter un film ou une série</h2>
@@ -71,10 +71,9 @@
 
                 </form>
             </section>
-
-            <section>
-                <h2>Sélection cinéma</h2>
-                <div id="selectionCinema">
+            <section id="sectionSelectionCinema">
+                <h2 class="centrer">Sélection cinéma</h2>
+                <div id="selectionCinema" class="centrer">
                     <div>
                         <img src="assets/assets/scifi.png">
                         <h2>Inception</h2>
@@ -104,10 +103,9 @@
                     </div>
                 </div>
             </section>
-
-            <section>
-                <h2>Statistiques</h2>
-                <div id="stats">
+            <section id="sectionStats">
+                <h2 class="centrer">Statistiques</h2>
+                <div id="stats" class="centrer">
                     <div id="total">
                         <h2>Total</h2>
                         <br>
@@ -130,18 +128,17 @@
                     </div>
                 </div>
             </section>
-    
-            <section>
-                <h2>Mes Films et Séries</h2>
+            <section id="sectionMesFilmsSeries">
+                <h2 class="centrer">Mes Films et Séries</h2>
 
-                <select id="filtre" size="1" > Filtrer
+                <select id="filtre" size="1" class="centrer"> Filtrer
                     <option value = "Tous"> Tous </option>
                     <option value = "À voir"> À voir </option>
                     <option value = "En cours"> En cours </option>
                     <option value = "Vu"> Vu </option>
                 </select>
 
-                <table id="mesFilmsSeries">
+                <table id="mesFilmsSeries" class="centrer">
                     <tr>
                         <th> Titre </th>
                         <th> Genre </th>
@@ -168,10 +165,10 @@
                     </tr>
                 </table>
             </section>
-
-            <section>
-                <h2>Bande-annonce de votre film préféré</h2>
+            <section id="sectionBandeAnnonce">
+                <h2 class="centrer">Bande-annonce de votre film préféré</h2>
                 <iframe 
+                    class="centrer"
                     width="560" 
                     height="315" 
                     src="https://www.youtube.com/embed/TEN-2uTi2c0?si=sRK6Q1r4-GJ1dLyp"

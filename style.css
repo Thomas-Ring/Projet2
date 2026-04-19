@@ -31,9 +31,6 @@ fieldset {
   gap: 20px;
 }
 
-main { margin: 15px;
-}
-
 table {border-collapse: collapse;
     width: 100%;
 }
@@ -123,4 +120,35 @@ footer a {
 
 #avertissementRequired {
     color:#FF0000;
+}
+
+#sectionForm{
+    background-color: #F0F8FF;
+    margin: 0;
+}
+
+#sectionSelectionCinema{
+    background-color: #F0FFFF;
+    margin: 0;
+}
+
+#sectionStats{
+    background-color: #F0F8FF;
+    margin: 0;
+}
+
+#sectionMesFilmsSeries{
+    background-color: #F0FFFF;
+    margin: 0;
+}
+
+#sectionBandeAnnonce{
+    background-color: #F0F8FF;
+    margin: 0;
+}
+
+.centrer {
+    margin-right: auto;
+    margin-left: auto;
+    width:90%;
 }
