@@ -112,3 +112,7 @@ footer a {
     width:10%;
     float:right;
 }
+
+#avertissementRequired {
+    color:#FF0000;
+}
