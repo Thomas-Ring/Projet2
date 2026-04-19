@@ -107,3 +107,8 @@ footer a {
     background-color: #CCFFFF;
     margin: 1%
 }
+
+#filtre {
+    width:10%;
+    float:right;
+}

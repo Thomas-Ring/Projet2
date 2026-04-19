@@ -28,3 +28,17 @@ $("#mesFilmsSeries").on("click", ".delete", (function(){
             return $(this).text().trim() === "Vu";
         }).length);
     }));
+
+$("#filtre").on("change", function(){
+    if ($("#filtre").val() === "Tous") {
+        $("#mesFilmsSeries").children().show();
+    } else {
+        $(".statutTableau").each(function(index){
+            if ($(this).text().trim() === $("#filtre").val()) {
+                $(this).parent().show();
+            } else  {
+                $(this).parent().hide();
+            }
+        })
+    }
+})
