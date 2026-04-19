@@ -85,6 +85,7 @@ footer a {
 
 #selectionCinema div {
     background-color: #CCFFFF;
+    border-radius: 20px;
 }
 
 #selectionCinema img {
@@ -100,16 +101,18 @@ footer a {
 
 #stats {
     display:flex;
+    text-align: center;
 }
 
 #stats div {
     width:20%;
     background-color: #CCFFFF;
-    margin: 1%
+    margin: 1%;
+    border-radius: 20px;
 }
 
 #filtre {
-    width:10%;
+    width:50%;
     float:right;
 }
 
