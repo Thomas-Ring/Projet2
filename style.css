@@ -15,6 +15,11 @@ header {
   padding: 10px 20px;
 }
 
+nav a{
+  color: white;
+  text-decoration: none;
+}
+
 fieldset {
   border-radius: 20px;
   box-shadow:outset;
@@ -37,7 +42,7 @@ table {border-collapse: collapse;
 
 th {text-align: left;
     font-weight: bold;
-    background-color: #E0E0E0;
+    background-color: #F2F6F7;
 }
 
 td, th {border-bottom: 1px solid #D3D3D3;
@@ -86,7 +91,7 @@ footer a {
 }
 
 #selectionCinema div {
-    background-color: #CCFFFF;
+    background-color: #FFFFFF;
     border-radius: 20px;
 }
 
@@ -108,9 +113,10 @@ footer a {
 
 #stats div {
     width:20%;
-    background-color: #CCFFFF;
+    background-color: #FFFFFF;
     margin: 1%;
     border-radius: 20px;
+    padding: 20px;
 }
 
 #filtre {
