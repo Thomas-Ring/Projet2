@@ -15,6 +15,9 @@ $("#boutonSoumettre").on("click", (function(){
             return $(this).text().trim() === "Vu";
         }).length);
         $("#avertissementRequired").text("");
+        if (($("#statut").val() !== $("#filtre").val()) && ($("#filtre").val() !== "Tous")) {
+            $(".statutTableau").parent().last().hide();
+        }
     } else {
         $("#avertissementRequired").text("Veuillez remplir tous les champs.");
     }
@@ -35,15 +38,11 @@ $("#mesFilmsSeries").on("click", ".delete", (function(){
 }));
 
 $("#filtre").on("change", function(){
-    if ($("#filtre").val() === "Tous") {
-        $("#mesFilmsSeries").children().show();
-    } else {
-        $(".statutTableau").each(function(index){
-            if ($(this).text().trim() === $("#filtre").val()) {
-                $(this).parent().show();
-            } else  {
-                $(this).parent().hide();
-            }
-        })
-    }
+    $(".statutTableau").each(function(index){
+        if (($(this).text().trim() === $("#filtre").val()) || ($("#filtre").val() === "Tous")) {
+            $(this).parent().show();
+        } else  {
+            $(this).parent().hide();
+        }
+    })
 })

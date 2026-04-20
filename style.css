@@ -61,10 +61,6 @@ fieldset {
   box-shadow:outset;
 }
 
-table {
-    width: 90%;
-}
-
 th {text-align: left;
     font-weight: bold;
     background-color: #F2F6F7;
@@ -120,16 +116,12 @@ footer a {
     text-decoration: none;
 }
 
-.container a {
-   margin-right: 20px;
-}
-
 #selectionCinema {
     display:grid;
     gap:3em;
-    width:90%;
+    width:100%;
     height:auto;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 48% 48%;
     grid-template-rows: auto auto;
 }
 
@@ -169,9 +161,28 @@ footer a {
     margin:0;
 }
 
+#mesFilmsSeries {
+    margin:0;
+}
+
 #filtre {
-    width:50%;
-    float:right;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap:2em;
+    height:20px;
+    width:150px;
+    border-radius: 5px;
+}
+
+#wrapperh2Filtre {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    gap:2em;
 }
 
 #avertissementRequired {
@@ -227,7 +238,7 @@ footer a {
 .centrer {
     margin-right: auto;
     margin-left: auto;
-    width:90%;
+    width:100%;
 }
 
 h1, h2, p {
