@@ -61,6 +61,19 @@ fieldset {
   box-shadow:outset;
 }
 
+#instructionsFormulaire {
+    color:#414660;
+}
+
+#titre, #genre, #statut {
+    border-radius: 5px;
+}
+
+#boutonSoumettre {
+    margin:10px;
+    border-radius: 5px;
+}
+
 th {text-align: left;
     font-weight: bold;
     background-color: #F2F6F7;
