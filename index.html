@@ -28,155 +28,170 @@
         </header>
 
         <main>
-            <section id="sectionForm">
-                <form id="ajouter" name = "ajouter" class="centrer">
+            <div id="gridWrapper">
+                <div id="gridPale1"></div>
+                <section id="sectionForm">
+                    <form id="ajouter" name = "ajouter" class="centrer">
 
-                    <fieldset>
-                        <h2>Ajouter un film ou une série</h2>
+                        <fieldset>
+                            <h2>Ajouter un film ou une série</h2>
+                    
+                            Titre: 
+                            <input type = "text" name = "titre" id = "titre" placeholder = "Ex: Legally Blonde" required>
+
+                            Genre : 
+                            <select id="genre" required>
+                                <option>Choisir un genre</option>
+                                <option>Action </option>
+                                <option>Fantaisie</option>
+                                <option>Romance</option>
+                                <option>Science-fiction</option>
+                                <option>Comédie</option>
+                                <option>Drame</option>
+                                <option>Animation</option>
+                                <option>Documentaire</option>
+                                <option>Série</option>
+                            </select>
                 
-                        Titre: 
-                        <input type = "text" name = "titre" id = "titre" placeholder = "Ex: Legally Blonde" required>
+                            Statut: 
 
-                        Genre : 
-                        <select id="genre" required>
-                            <option>Choisir un genre</option>
-                            <option>Action </option>
-                            <option>Fantaisie</option>
-                            <option>Romance</option>
-                            <option>Science-fiction</option>
-                            <option>Comédie</option>
-                            <option>Drame</option>
-                            <option>Animation</option>
-                            <option>Documentaire</option>
-                            <option>Série</option>
-                        </select>
-            
-                        Statut: 
+                            <select id="statut" required>
+                                <option>Choisir un statut</option>
+                                <option>À voir</option>
+                                <option>En cours</option>
+                                <option>Vu</option>
+                            </select>
 
-                        <select id="statut" required>
-                            <option>Choisir un statut</option>
-                            <option>À voir</option>
-                            <option>En cours</option>
-                            <option>Vu</option>
-                        </select>
+                            <br>
 
-                        <br>
+                            <button id="boutonSoumettre" type="button">+ Ajouter</button>
 
-                        <button id="boutonSoumettre" type="button">+ Ajouter</button>
+                            <p id="avertissementRequired"></p>
 
-                        <p id="avertissementRequired"></p>
+                        </fieldset>
 
-                    </fieldset>
+                    </form>
+                </section>
+                <div id="gridPale2"></div>
+                <div id="gridFonce1"></div>
+                <section id="sectionSelectionCinema">
+                    <h2 class="centrer">Sélection cinéma</h2>
+                    <div id="selectionCinema" class="centrer">
+                        <div>
+                            <img src="assets/assets/scifi.png">
+                            <h2>Inception</h2>
+                            <br>
+                            <p>Un thriller de science-fiction sur les rêves et la manipulation de l'esprit.</p>
+                        </div>
 
-                </form>
-            </section>
-            <section id="sectionSelectionCinema">
-                <h2 class="centrer">Sélection cinéma</h2>
-                <div id="selectionCinema" class="centrer">
-                    <div>
-                        <img src="assets/assets/scifi.png">
-                        <h2>Inception</h2>
-                        <br>
-                        <p>Un thriller de science-fiction sur les rêves et la manipulation de l'esprit.</p>
+                        <div>
+                            <img src="assets/assets/romance.png">
+                            <h2>Titanic</h2>
+                            <br>
+                            <p>Une histoire d'amour dramatique sur fond de catastrophe maritime.</p>
+                        </div>
+
+                        <div>
+                            <img src="assets/assets/action.png">
+                            <h2>Batman</h2>
+                            <br>
+                            <p>Un héros sombre affronte le crime dans une ville intense et dangereuse.</p>
+                        </div>
+
+                        <div>
+                            <img src="assets/assets/fantasy.png">
+                            <h2>Harry Potter</h2>
+                            <br>
+                            <p>Une saga fantastique dans un univers magique rempli d'aventure.</p>
+                        </div>
                     </div>
+                </section>
+                <div id="gridFonce2"></div>
+                <div id="gridPale3"></div>
+                <section id="sectionStats">
+                    <h2 class="centrer">Statistiques</h2>
+                    <div id="stats" class="centrer">
+                        <div id="total">
+                            <h2>Total</h2>
+                            <br>
+                            <p id="nbTotal">3</p>
+                        </div>
+                        <div id="aVoir">
+                            <h2>À voir</h2>
+                            <br>
+                            <p id="nbAVoir">1</p>
+                        </div>
+                        <div id="enCours">
+                            <h2>En cours</h2>
+                            <br>
+                            <p id="nbEnCours">1</p>
+                        </div>
+                        <div id="vu">
+                            <h2>Vu</h2>
+                            <br>
+                            <p id="nbVu">1</p>
+                        </div>
+                    </div>
+                </section>
+                <div id="gridPale4"></div>
+                <div id="gridFonce3"></div>
+                <section id="sectionMesFilmsSeries">
+                    <h2 class="centrer">Mes Films et Séries</h2>
 
-                    <div>
-                        <img src="assets/assets/romance.png">
-                        <h2>Titanic</h2>
-                        <br>
-                        <p>Une histoire d'amour dramatique sur fond de catastrophe maritime.</p>
-                    </div>
+                    <select id="filtre" size="1" class="centrer"> Filtrer
+                        <option value = "Tous"> Tous </option>
+                        <option value = "À voir"> À voir </option>
+                        <option value = "En cours"> En cours </option>
+                        <option value = "Vu"> Vu </option>
+                    </select>
 
-                    <div>
-                        <img src="assets/assets/action.png">
-                        <h2>Batman</h2>
-                        <br>
-                        <p>Un héros sombre affronte le crime dans une ville intense et dangereuse.</p>
+                    <div id="mesFilmsSeriesWrapper">
+                        <table id="mesFilmsSeries" class="centrer">
+                            <tr>
+                                <th> Titre </th>
+                                <th> Genre </th>
+                                <th> Statut </th>
+                                <th> Action </th>
+                            </tr>
+                            <tr>
+                                <td> Inception </td>
+                                <td> Science-fiction </td>
+                                <td class="statutTableau"> Vu </td>
+                                <td> <button type="button" class="delete">Supprimer</button></td>
+                            </tr>
+                            <tr>
+                                <td> Stranger Things </td>
+                                <td> Série </td>
+                                <td class="statutTableau"> En cours </td>
+                                <td> <button type="button" class="delete">Supprimer</button></td>
+                            </tr>
+                            <tr>
+                                <td> Toy Story </td>
+                                <td> Animation </td>
+                                <td class="statutTableau"> À voir </td>
+                                <td> <button type="button" class="delete">Supprimer</button></td>
+                            </tr>
+                        </table>
                     </div>
-
-                    <div>
-                        <img src="assets/assets/fantasy.png">
-                        <h2>Harry Potter</h2>
-                        <br>
-                        <p>Une saga fantastique dans un univers magique rempli d'aventure.</p>
-                    </div>
-                </div>
-            </section>
-            <section id="sectionStats">
-                <h2 class="centrer">Statistiques</h2>
-                <div id="stats" class="centrer">
-                    <div id="total">
-                        <h2>Total</h2>
-                        <br>
-                        <p id="nbTotal">3</p>
-                    </div>
-                    <div id="aVoir">
-                        <h2>À voir</h2>
-                        <br>
-                        <p id="nbAVoir">1</p>
-                    </div>
-                    <div id="enCours">
-                        <h2>En cours</h2>
-                        <br>
-                        <p id="nbEnCours">1</p>
-                    </div>
-                    <div id="vu">
-                        <h2>Vu</h2>
-                        <br>
-                        <p id="nbVu">1</p>
-                    </div>
-                </div>
-            </section>
-            <section id="sectionMesFilmsSeries">
-                <h2 class="centrer">Mes Films et Séries</h2>
-
-                <select id="filtre" size="1" class="centrer"> Filtrer
-                    <option value = "Tous"> Tous </option>
-                    <option value = "À voir"> À voir </option>
-                    <option value = "En cours"> En cours </option>
-                    <option value = "Vu"> Vu </option>
-                </select>
-
-                <table id="mesFilmsSeries" class="centrer">
-                    <tr>
-                        <th> Titre </th>
-                        <th> Genre </th>
-                        <th> Statut </th>
-                        <th> Action </th>
-                    </tr>
-                    <tr>
-                        <td> Inception </td>
-                        <td> Science-fiction </td>
-                        <td class="statutTableau"> Vu </td>
-                        <td> <button type="button" class="delete">Supprimer</button></td>
-                    </tr>
-                    <tr>
-                        <td> Stranger Things </td>
-                        <td> Série </td>
-                        <td class="statutTableau"> En cours </td>
-                        <td> <button type="button" class="delete">Supprimer</button></td>
-                    </tr>
-                    <tr>
-                        <td> Toy Story </td>
-                        <td> Animation </td>
-                        <td class="statutTableau"> À voir </td>
-                        <td> <button type="button" class="delete">Supprimer</button></td>
-                    </tr>
-                </table>
-            </section>
-            <section id="sectionBandeAnnonce">
-                <h2 class="centrer">Bande-annonce de votre film préféré</h2>
-                <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/TEN-2uTi2c0?si=sRK6Q1r4-GJ1dLyp"
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen>
-                </iframe>
-            </section>
+                </section>
+                <div id="gridFonce4"></div>
+                <div id="gridPale5"></div>
+                <section id="sectionBandeAnnonce">
+                    <h2 class="centrer">Bande-annonce de votre film préféré</h2>
+                    <iframe 
+                        id="bandeAnnonce"
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/TEN-2uTi2c0?si=sRK6Q1r4-GJ1dLyp"
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </section>
+                <div id="gridPale6"></div>
+            </div>
         </main>
 
         <footer>
